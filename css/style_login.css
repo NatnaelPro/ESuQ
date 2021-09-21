@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+}
+
+
+#register{
+    font-family: 'Montserrat', sans-serif;
+    background: #f6f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#register h1{
+    padding: 10px 0;
+    margin: 0;
+}
+
+#register p{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin:20px 0 30px;
+}
+
+#register a{
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+#register form p{
+   font-size: 12px;
+}
+#register .container{
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    max-width: 100%;
+    min-height: 750px;
+}
+
+#register .form-container form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#register .form-container input{
+    background: #eee;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+#register .form-row{
+    width: 100%;
+}
+
+#register .btn, #register button{
+    border-radius: 20px;
+    border: 1px solid #52C4B8;
+    background: #52C4B8;
+    color: #fff;
+    width: 180px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 12px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: text-transform 80ms ease-in;
+}
+
+#register button:active, #register .btn:active{
+    transform: scale(0.95);
+}
+
+#register button:focus, #register .btn:focus{
+    outline: none;
+}
+
+#register button.ghost{
+    background: transparent;
+    border-color: #fff;
+}
+
+#register .form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+#register .sign-in-container .form-group{
+    width: 70%;
+}
+
+#register .sign-in-container h1{
+    font-weight: bold;
+}
+
+.sign-in-container button{
+    width: 180px;
+}
+
+.sign-in-container{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    margin-top: 180px;
+}
+
+
+.sign-up-container{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.test{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 5;
+}
+
+.overlay{
+    background: #52C4B8;
+    /* background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover; */
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-left{
+    transform: translateX(-20%);
+}
+
+/* ANIMATION */
+
+/* MOVE SIGN IN TO THE RIGHT */
+.container.right-panel-active .sign-in-container{
+    transform: translateX(100%);
+}
+
+/* MOVE OVERYLAY TO LEFT */
+.container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+
+
+/* BRING SIGNUP TO SIGNIN */
+.container.right-panel-active .sign-up-container{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Move overlay back to the right */
+.container.right-panel-active .overlay{
+    transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left{
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right{
+    transform: translateX(0);
+}
+
+.form-group{
+    position: relative;
+}
+
+.form-container .check{
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    color: #2ECC71;
+    font-size: 19px;
+    visibility: hidden;
+}
+.form-container .exclamation{
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    font-size: 19px;
+    color: #E74C3C;
+    visibility: hidden;
+}
+
+.form-container .exclamation-signup, .form-container .check-signup{
+    top: 11px;
+}
+
+#register .form-group small{
+    color: #E74C3C;
+    text-align: left;
+    display: block;
+    padding-left: 10px;
+    display: none;
+}
+
+.error small{
+    display: block !important;
+    color: #E74C3C;
+    display: inline;
+}
+.success #email, .success #password, .success #firstName,
+.success #lastName, .success #username, .success #emailSignup,
+.success #phoneNumber, .success #address, .success #region,
+.success #passwordSignup, .success #passwordConfirm{
+    box-shadow: none;
+    border: 2px solid #2ECC71;
+}
+
+.error #email, .error #password, .error #firstName,
+.error #lastName, .error #username, .error #emailSignup,
+.error #phoneNumber, .error #address, .error #region,
+.error #passwordSignup, .error #passwordConfirm{
+    box-shadow: none;
+    border: 2px solid #E74C3C;
+}
+
+.success .check{
+    visibility: visible;
+}
+.error .exclamation{
+    visibility: visible;
+}
+
+
+.signup-error{
+    display: none;
+}
+
+#passwordStrengthLabel{
+    color: white;
+    background: mediumaquamarine;
+    display: none;
+}

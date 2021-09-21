@@ -1,0 +1,36 @@
+.form{
+    
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+}
+
+.vendor-container{
+    width: 40%;
+    margin: auto;
+}
+.vendor-container .form-group{
+    position: relative;
+}
+
+.vendor-container .check-vendor{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.vendor-container .exclamation-vendor{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.vendor-container small{
+    display: none;
+}
+
+.vendor-container h1, .header-1{
+    font-family: serif;
+}

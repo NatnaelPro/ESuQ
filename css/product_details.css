@@ -1,0 +1,88 @@
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star{
+    color: rgb(211, 211, 211);
+}
+.rating{
+    font-size: 25px !important;
+}
+
+
+
+
+.btn-detial-product{
+    background: red;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.quantity-product_details{
+    width: 50px;
+}
+
+.progress{
+    width: 100%;
+}
+
+.progress-bar{
+    background-color: yellow;
+}
+
+.start-and-percent{
+    margin-top: 2px;
+}
+
+.helpful-btn{
+    border: 1px solid rgb(224, 221, 221);
+}
+
+.advertisment{
+    width: 100%;
+    height: 100vh;
+}
+
+.answer-search{
+    width: 400px;
+    border-radius: 30px;
+    height: 40px;
+    border-width: 1px;
+    padding-left: 50px;
+    outline: none;
+}
+
+.answer-search-container{
+    position: relative;
+}
+
+.answer-search-icon{
+    position: absolute;
+    font-size: 20px !important;
+    top: 10px;
+    left: 20px;
+}
+
+.answerTable td, .answerTable th {
+    border: none;
+}
+
+.answerTable th{
+    text-align: center;
+}
+
+.question-header{
+    font-weight: bold;
+}
+
+.answer-btn{
+    border: 1px solid;
+    border-radius: 10px;
+    margin-left: 200px;
+}
