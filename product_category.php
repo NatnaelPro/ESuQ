@@ -24,7 +24,7 @@
       </div>
       <div class="col-md-4">
         <h4 class="text-center pt-3">Type</h4>
-        <div style="padding-left: 80px; padding-top: 10px;"><input id="phone" class="ml-5 pl-5 mr-3" type="checkbox" value="phone" checked><span style='font-size: 20px;'>Mobile Phone</span></div>
+        <div style="padding-left: 80px; padding-top: 10px;"><input id="phone" class="ml-5 pl-5 mr-3" type="checkbox" value="phone"><span style='font-size: 20px;'>Mobile Phone</span></div>
         <div style="padding-left: 80px; padding-top: 10px;"><input id="computer" class="ml-5 pl-5 mr-3" type="checkbox" value="computer"><span style='font-size: 20px;'>Laptop & Tablet</span></div>
         <div style="padding-left: 80px; padding-top: 10px;"><input id="monitor" class="ml-5 pl-5 mr-3" type="checkbox" value="monitor"><span style='font-size: 20px;'>Monitor</span></div>
 
@@ -126,7 +126,7 @@
 
 <script>
   $('#testing').click(function(){
-    if($('#phone').prop(":checked")){
+    if($('#phone').click()){
     console.log("checked");
     }else{
       console.log("unchecked");
