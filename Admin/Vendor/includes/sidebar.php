@@ -28,7 +28,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="vendor_profile.php">
                             <i class="fa fa-user"></i> Profile
                         </a>
                     </li>
