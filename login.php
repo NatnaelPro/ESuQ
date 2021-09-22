@@ -48,8 +48,11 @@ if($firstName != '' && $lastName != '' && $username != '' && $email != '' && $ph
         if(!isset($_COOKIE['user'])){
           setcookie('user', $row['id'], time() + (86400 * 365));
         }
-        
-        header('location:index.php');
+        if($row['role'] == "customer"){
+          header('location:index.php');
+        }
+        if($row['role'] == "vendor")
+        header('location:Admin/vendor/dashboard.php');
         $flag = true;
       }
     } 
