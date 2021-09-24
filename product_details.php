@@ -655,7 +655,7 @@
                   $('#save_review').text('Edit review');
                   $('#save_review').addClass('edit_review');
                   
-                  $('.edit_review').click(function(){
+                  $('.edit_r;eview').click(function(){
                     var user_review = $('#user_review_input').val();
                     var edited_rating = 0;
                     for(var j=1; j<=5; j++){
@@ -700,8 +700,6 @@
                     }
                   }
                 });
-
-
               }
             }       
           })

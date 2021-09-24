@@ -145,7 +145,7 @@
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center">
-                    <button class="btn checkout">Checkout</button>
+                    <a href="checkout.php" style="color: black; text-decoration: none; width: 100%;"> <button class="btn checkout"> Checkout </button> </a>
                 </div>
             </div>
         </div>

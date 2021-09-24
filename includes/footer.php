@@ -125,7 +125,7 @@ $('#mobile_phone').click(function(){
     url:"product_loader.php",
     method:'POST',
     dataType:"JSON",
-    data:{load_product: 'load_product', id: sub_cat_id, type: type, page: 0},
+    data:{load_product: 'load_product', id: sub_cat_id, type: type, page: 0, sub_cat_id:0},
     success:function(data){
     //alert(data);
       var html = "";
